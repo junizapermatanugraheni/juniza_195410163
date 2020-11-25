@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #fff;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+body{
+    font-family: sans-serif;
+    background: #f0f0f0;
+}
+ 
+h1{
+    text-align: center;
+    /*ketebalan font*/
+    font-weight: 300;
+}
+ 
+.tulisan_login{
+    text-align: center;
+    /*membuat semua huruf menjadi kapital*/
+    text-transform: uppercase;
+}
+ 
+.kotak_login{
+    width: 350px;
+    background: white;
+    /*meletakkan form ke tengah*/
+    margin: 80px auto;
+    padding: 30px 20px;
+}
+ 
+label{
+    font-size: 11pt;
+}
+ 
+.form_login{
+    /*membuat lebar form penuh*/
+    box-sizing : border-box;
+    width: 100%;
+    padding: 10px;
+    font-size: 11pt;
+    margin-bottom: 20px;
+}
+ 
+.tombol_login{
+    background: #46de4b;
+    color: white;
+    font-size: 11pt;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+}
+ 
+.link{
+    color: #232323;
+    text-decoration: none;
+    font-size: 10pt;
+}
