@@ -1,8 +1,10 @@
 <?php
 //koneksi ke database
-$host = mysqli_connect("localhost","root","","juniza");
-
-if (mysqli_connect_error()) {
-	echo "Koneksi database gagal: " . mysqli_connect_error();
+try{
+	$myPDO = new PDO("pgsql:host=localhost,dbname=juniza","postgres","1234");
+	echo "Connected to PostgreSQL with PDO";
+}catch(PDOException $e){
+	echo "Koneksi database gagal: " . $e->getMessage();
+	die;
 }
 ?>
